@@ -1,0 +1,98 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Entfernen von Rändern und Auffüllungen aus der Liste */
+
+ul {
+  margin: 25;
+  padding: 0;
+}
+
+/* Gestaltung der Listenelemente */
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 10px 10px 10px;
+  background: rgb(191, 240, 203);
+  font-size: 18px;
+  transition: 0.2s;
+
+  /* Listenelemente nicht auswählbar machen */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* dunklere background-color beim hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* Wenn darauf geklickt, fügt eine Hintergrundfarbe hinzu und streicht den Text durch */
+ul li.checked {
+  background: rgb(75, 75, 75);
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+}
+
+/* Stellen von allen ungeraden Listenelemente auf eine andere Farbe (Zebrastreifen) */
+ul li:nth-child(odd) {
+  background: #b6b4b4;
+}
+
+/*  header */
+.header {
+  background-color: #8ce77a;
+  padding: 40px 60px;
+  color: white;
+  text-align: center;
+}
+
+/* Floats nach dem header löschen */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* input-Feld */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 65%;
+  padding: 10px;
+  float: center;
+  font-size: 16px;
+}
+
+/* footer der die Einträge zählt und wenn markiert als erledigt löscht */
+.footer {
+  float: center;
+	text-align: center;
+
+}
+.todo-count {
+	float: center;
+	text-align: center;
+  padding: 50px 50px;
+}
+
+.todo-count strong {
+	font-weight: 800px;
+  font-size: 20px;
+}
+
+.main {
+  margin: 26px;
+  padding: 0;
+}
+
+
+
+
+
