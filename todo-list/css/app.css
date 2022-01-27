@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-/* Entfernen von Rändern und Auffüllungen aus der Liste */
+/* Entfernen von Rändern/Rahmen der Liste */
 
 ul {
   margin: 25;
@@ -19,19 +19,19 @@ ul li {
   font-size: 18px;
   transition: 0.2s;
 
-  /* Listenelemente nicht auswählbar machen */
+  /* Listenelemente nicht 'auswählbar' machen */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-/* dunklere background-color beim hover */
+/* andere background-color beim hovern */
 ul li:hover {
   background: #ddd;
 }
 
-/* Wenn darauf geklickt, fügt eine Hintergrundfarbe hinzu und streicht den Text durch */
+/* fügt eine Hintergrundfarbe hinzu und streicht den Text durch, wenn Kästchen geklickt */
 ul li.checked {
   background: rgb(75, 75, 75);
   color: #fff;
@@ -39,24 +39,17 @@ ul li.checked {
   margin: 10px;
 }
 
-/* Stellen von allen ungeraden Listenelemente auf eine andere Farbe (Zebrastreifen) */
+/* Setzen von allen ungeraden Listenelementen auf eine andere Farbe */
 ul li:nth-child(odd) {
   background: #b6b4b4;
 }
 
-/*  header */
+/*  Gestaltung des header */
 .header {
   background-color: #8ce77a;
   padding: 40px 60px;
   color: white;
   text-align: center;
-}
-
-/* Floats nach dem header löschen */
-.header:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* input-Feld */
@@ -68,6 +61,13 @@ input {
   padding: 10px;
   float: center;
   font-size: 16px;
+}
+
+/* Floats nach dem header löschen */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* footer der die Einträge zählt und wenn markiert als erledigt löscht */
